@@ -1,0 +1,32 @@
+.card-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+}
+
+.card-body {
+    text-align: center; 
+    padding-top: 20px; 
+
+}
+.profile-img {
+    width: 30px;
+    height: 30px;
+}
+.card-custom {
+    margin-right: 1rem; /* Adjust spacing between cards */
+}
+.btn-custom-spacing {
+    margin-left: 1rem; /* Adjust spacing for buttons */
+}
+.nav-link.active {
+font-weight:bold ; /* Make the active link bold */
+color: rgb(255, 255, 255) !important; /* Optionally change the color to red */
+}
+.nav-link:hover {
+border-bottom: 2px solid rgb(244, 244, 244);
+padding-bottom: 2px;
+}

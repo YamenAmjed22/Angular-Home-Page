@@ -1,0 +1,27 @@
+<input [(ngModel)]="searchText" placeholder="Search..." />
+<div class="row">
+  <div class="col" *ngFor="let card of cardData">
+    <div class="card vacation-card">
+      <div class="card-body">
+        <div class="align-items-center">
+          <div class="text-center mb-3">
+            <img src="/images/8N7A5661.JPG" alt="Profile" class="card-photo">
+          </div>
+          <div class="text-start ms-3">
+            <h5 class="card-title text-center mb-4" [innerHTML]="card.name | highlight:searchText"></h5>
+            <p class="card-text mb-0 fw-lighter mt-2">Submitted on:</p>
+            <p class="mt-1 fw-bold mb-0">{{ card.date }}</p>
+            <p class="card-text fw-lighter mt-1 mb-0">Duration:</p>
+            <p class="fw-bold mb-0">{{ card.duration }}</p>
+            <p class="card-text fw-lighter mt-0 mb-0">Salary:</p>
+            <p class="fw-bold mt-1">{{ card.salary }}</p>
+          </div>
+        </div>
+        <div class="text-start mt-3 d-flex">
+          <button class="btn btn-outline-success ms-auto mt-2 me-2">Decline</button>
+          <button class="btn btn-success">Approve</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

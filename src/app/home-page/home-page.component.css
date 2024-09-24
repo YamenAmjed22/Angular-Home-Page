@@ -1,0 +1,10 @@
+.profile-img {
+    width: 30px;
+    height: 30px;
+}
+.card-custom {
+    margin-right: 1rem; /* Adjust spacing between cards */
+}
+.btn-custom-spacing {
+    margin-left: 1rem; /* Adjust spacing for buttons */
+}
